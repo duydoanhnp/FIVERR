@@ -1,0 +1,96 @@
+.detailjob {
+  .content-main {
+    padding: 10px 90px 50px 90px;
+    .content-items {
+      padding: 0 50px;
+      display: flex;
+      justify-content: space-around;
+      .content-left {
+        margin: 0;
+        width: 50%;
+        p {
+          color: #ffb33e;
+          svg {
+            margin-left: 2px;
+            padding-bottom: 2px;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .content-right {
+        width: 40%;
+        margin: auto;
+        .content-right-detail {
+          border: 1px solid #ccc;
+          padding: 20px 0;
+          position: relative;
+          .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #e4e1e1dd;
+            z-index: 1000;
+          }
+          h3 {
+            text-align: center;
+            padding-bottom: 20px;
+            margin: 0;
+          }
+          .price-items {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+            p {
+              margin-bottom: 0;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            span {
+              font-size: 25px;
+              font-weight: 500;
+            }
+          }
+          .button {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            button {
+              color: #fff;
+              font-size: 14px;
+              padding: 10px 40px;
+              border-radius: 5px;
+              border: 1px solid transparent;
+              background-color: #1dbf73;
+              outline: none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .detailjob {
+    .content-main {
+      padding: 20px 0;
+      .content-items {
+        display: block;
+        .content-left {
+          width: 100%;
+        }
+        .content-right {
+          padding: 20px 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+#components-layout-demo-custom-trigger .trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  #components-layout-demo-custom-trigger .trigger:hover {
+    color: #1890ff;
+  }
+  
+  #components-layout-demo-custom-trigger .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+
+  
+  #components-layout-demo-fixed-sider .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+
+
+
+.sider__link{
+    display: block;
+    @include text($c-primary, $fs-base, $fw-semibold);
+    margin: 10px 0;
+    padding: 20px;
+    &:hover{
+        color: $c-text;
+    }
+}
+.content__input{
+    padding: 15px;
+    width: 50%;
+    height: 36px;
+}
+.content__btn{
+    background-color: $c-primary;
+    @include text($c-white, $fs-base, $fw-bold);
+    &:hover{
+        background-color: #19a463;
+    }
+}
+.avatar__icon{
+  @include text($c-white, $fs-xl, $fw-bold);
+}
+.avatar__name{
+  @include text($c-white, $fs-md, $fw-semibold);
+}
+.btn-avatar {
+  position: relative;
+}
+.avatar__menu{
+  position: absolute;
+  left: -60px;
+}
+.action__btn{
+  .btn-detail{
+    background-color: $c-primary;
+    @include text($c-white, $fs-base, $fw-bold);
+    &:hover{
+        background-color: #19a463;
+    }
+  }
+  .btn-edit{
+    background-color: $c-text;
+    @include text($c-white, $fs-base, $fw-bold);
+    border: none;
+    &:hover{
+        opacity: 0.8;
+    }
+  }
+  .btn-delete{
+    @include text($c-white, $fs-base, $fw-bold);
+  }
+}

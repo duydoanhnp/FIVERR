@@ -1,0 +1,790 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}
+
+.login__header {
+  color: #62646a;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.login__apps .btn-facebook {
+  background-color: #4267b2;
+  border: 1px solid #4267b2;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.login__apps .btn-facebook:hover {
+  opacity: 0.9;
+}
+
+.login__apps .btn-facebook i {
+  margin-right: 20px;
+}
+
+.login__apps .btn-google {
+  background-color: #fff;
+  border: 1px solid #e4e5e7;
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.login__apps .btn-google:hover {
+  background-color: #fafafa;
+}
+
+.login__apps .btn-google i {
+  margin-right: 20px;
+}
+
+.login__separator {
+  height: 12px;
+  margin: 20px 0 32px;
+  text-align: center;
+  border-bottom: 1px solid #e4e5e7;
+}
+
+.login__separator span {
+  color: #62646a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0 8px;
+  background-color: #fff;
+}
+
+.ant-checkbox + span,
+.login__text {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.login-form-forgot {
+  color: #1dbf73;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 40%;
+}
+
+button.ant-btn.ant-btn-default.login-form-button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #1dbf73;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+button.ant-btn.ant-btn-default.login-form-button:hover {
+  background-color: #19a463;
+}
+
+.login__register {
+  color: #1dbf73;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.or {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.ant-modal-close-x {
+  display: none;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+.register__header {
+  color: #62646a;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.register__apps .btn-facebook {
+  background-color: #4267b2;
+  border: 1px solid #4267b2;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.register__apps .btn-facebook:hover {
+  opacity: 0.9;
+}
+
+.register__apps .btn-facebook i {
+  margin-right: 20px;
+}
+
+.register__apps .btn-google {
+  background-color: #fff;
+  border: 1px solid #e4e5e7;
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.register__apps .btn-google:hover {
+  background-color: #fafafa;
+}
+
+.register__apps .btn-google i {
+  margin-right: 20px;
+}
+
+.register__separator {
+  height: 12px;
+  margin: 20px 0 32px;
+  text-align: center;
+  border-bottom: 1px solid #e4e5e7;
+}
+
+.register__separator span {
+  color: #62646a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0 8px;
+  background-color: #fff;
+}
+
+.register__form .ant-form-item .ant-form-item-label .ant-form-item-required {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.register__agree {
+  color: #1dbf73;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.register__agree:hover {
+  color: #1dbf73;
+}
+
+button.ant-btn.ant-btn-default.register__btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #1dbf73;
+  border: none;
+  width: 60%;
+  height: 100%;
+}
+
+button.ant-btn.ant-btn-default.register__btn:hover {
+  background-color: #19a463;
+}
+
+.ant-modal-close-x {
+  display: none !important;
+}
+
+.register__text {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.register__register {
+  color: #1dbf73;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.register__separator2 {
+  height: 12px;
+  margin: 20px 0 32px -160px;
+  text-align: center;
+  border-bottom: 1px solid #e4e5e7;
+}
+
+.personal__gig .personalgig__work {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.personal__gig .personalgig__work div img {
+  width: 80%;
+}
+
+.personal__gig .personalgig__work div h1 {
+  color: #62646a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.personal__gig .personalgig__work div span {
+  color: #62646a;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.personal__gig .personalgig__work div a {
+  display: block;
+  margin-top: 10px;
+  color: #1dbf73;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.personal__gig .ant-card-body {
+  display: none;
+}
+
+.personal__gig .personalgig__create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.personal__gig .personalgig__create div span {
+  display: block;
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.personal__gig .personalgig__create div a {
+  background-color: #1dbf73;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.personal__gig .personalgig__create div a:hover {
+  background-color: #19a463;
+}
+
+.personal__gig .personalgig__job .container .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.personal__gig .personalgig__job .container .row .col-3 .content .personal__img {
+  background-image: url("../../../../image/image1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100%;
+  width: 30vh;
+}
+
+.personal__gig .personalgig__job .container .row .col-9 .content {
+  width: 200px;
+}
+
+.personal__gig .personalgig__job .container .row .col-9 .content h1 {
+  color: #62646a;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.personal__gig .personalgig__job .container .row .col-9 .content p {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.personal__gig .personalgig__job .container .row .col-6 .content div {
+  margin-left: 35px;
+}
+
+.personal__gig .personalgig__job .container .row .col-6 .content span {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.personal__gig .personalgig__job .container .row .col-6 .content .personal__btn {
+  margin-left: 8rem;
+}
+
+.personal__gig .personalgig__job .container .row .col-6 .content .personal__btn .btn-detail {
+  background-color: #1dbf73;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.personal__gig .personalgig__job .container .row .col-6 .content .personal__btn .btn-detail:hover {
+  background-color: #19a463;
+}
+
+.personal__gig .personalgig__job .container .row .col-6 .content .personal__btn .btn-edit {
+  background-color: #62646a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  margin: 0 20px;
+}
+
+.personal__gig .personalgig__job .container .row .col-6 .content .personal__btn .btn-edit:hover {
+  opacity: 0.8;
+}
+
+.personal__gig .personalgig__job .container .row .col-6 .content .personal__btn .btn-delete {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.personal__info {
+  position: relative;
+}
+
+.personal__info .personal__avatar {
+  width: 150px;
+  height: 150px;
+  font-size: 3em;
+  color: #fff;
+  background-color: #e4e5e7;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.personal__info .personal__avatar:hover {
+  background-color: #505051;
+}
+
+.personal__info .personal__avatar:hover .personal__camera {
+  opacity: 1;
+  visibility: unset;
+}
+
+.personal__info .personal__avatar:hover a {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.personal__info .personal__avatar a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.personal__info .personal__avatar .personal__camera {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.personal__info .personal__name {
+  text-align: center;
+}
+
+.personal__info .personal__name h1 {
+  margin-top: 10px;
+  color: #62646a;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.personal__info .personal__name .personal__icon {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.personal__info .personal__name a.btn {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  border: 1px solid #62646a;
+  width: 100%;
+  margin-top: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.personal__info .personal__name a.btn:hover {
+  background-color: #74767e;
+  color: #fff;
+}
+
+.personal__info .personal__badge {
+  background-color: #fff;
+  border: 1px solid #1dbf73;
+  color: #1dbf73;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.personal__info .personal__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.personal__info .personal__detail .personal__left span {
+  color: #62646a;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+
+.personal__info .personal__detail .personal__left span i {
+  margin-right: 10px;
+}
+
+.personal__info .personal__detail .personal__right span {
+  display: block;
+  color: #62646a;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.personal__info .personalinfo__learn .personal__learn div img {
+  width: 25%;
+}
+
+.personal__info .personalinfo__learn .personal__learn .personallearn__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.personal__info .personalinfo__learn .personal__learn .personallearn__detail div img {
+  width: 100%;
+}
+
+.personal__info .personalinfo__learn .personal__learn .personallearn__detail h1 {
+  color: #62646a;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.personal__info .personalinfo__learn .personal__learn .personallearn__detail span {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.personal__info .personalinfo__learn .personal__learn .personallearn__detail a {
+  background-color: #1dbf73;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.personal__info .personalinfo__learn .personal__learn .personallearn__detail a:hover {
+  background-color: #19a463;
+}
+
+.personal__info .personalinfo__learn .ant-card-body {
+  display: none;
+}
+
+.personal__info .personalinfo__desc .personal__desc {
+  margin-bottom: 20px;
+  padding: 5px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.personal__info .personalinfo__desc .personal__desc .personal__left span {
+  color: #62646a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.personal__info .personalinfo__desc .personal__desc .personal__left p {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top: 10px;
+}
+
+.personal__info .personalinfo__desc .personal__desc .personal__left p .subtitle {
+  color: #b2b2b2;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.personal__info .personalinfo__desc .personal__desc .personal__left p:hover a {
+  opacity: 1;
+  visibility: unset;
+}
+
+.personal__info .personalinfo__desc .personal__desc .personal__left p a {
+  color: #b2b2b2;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 5px;
+}
+
+.personal__info .personalinfo__desc .personal__desc .personal__left p a:hover {
+  color: #555;
+}
+
+.personal__info .personalinfo__desc .personal__desc .personal__left .personal__apps {
+  margin: 10px 0;
+  display: block;
+  color: #1dbf73;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.personal__info .personalinfo__desc .personal__desc .personal__right a {
+  color: #1dbf73;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.personal__info .personalinfo__desc .personal__desc .personal__right a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.personal__info .personalinfo__desc .personal__desc .personal__separator {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  border-bottom: 1px solid #f0f0f0;
+  width: 100%;
+  height: 2px;
+}
+
+.personal__info .personalinfo__share .personal__share {
+  padding: 10px 0;
+}
+
+.personal__info .personalinfo__share .personal__share h1 {
+  color: #62646a;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.personal__info .personalinfo__share .personal__share span {
+  color: #62646a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.personal__info .personalinfo__share .ant-card-body {
+  display: none;
+}
+
+.personal {
+  background-color: #f7f7f7;
+}
+
+#components-layout-demo-custom-trigger .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+#components-layout-demo-fixed-sider .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.sider__link {
+  display: block;
+  color: #1dbf73;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.sider__link:hover {
+  color: #62646a;
+}
+
+.content__input {
+  padding: 15px;
+  width: 50%;
+  height: 36px;
+}
+
+.content__btn {
+  background-color: #1dbf73;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.content__btn:hover {
+  background-color: #19a463;
+}
+
+.avatar__icon {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.avatar__name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn-avatar {
+  position: relative;
+}
+
+.avatar__menu {
+  position: absolute;
+  left: -60px;
+}
+
+.action__btn .btn-detail {
+  background-color: #1dbf73;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.action__btn .btn-detail:hover {
+  background-color: #19a463;
+}
+
+.action__btn .btn-edit {
+  background-color: #62646a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+}
+
+.action__btn .btn-edit:hover {
+  opacity: 0.8;
+}
+
+.action__btn .btn-delete {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=index.css.map */

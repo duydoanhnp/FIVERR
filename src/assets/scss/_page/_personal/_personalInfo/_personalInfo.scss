@@ -1,0 +1,217 @@
+.personal__info{
+    position: relative;
+    .personal__avatar{
+        width: 150px;
+        height: 150px;
+        font-size: 3em;
+        color: #fff;
+        background-color: #e4e5e7;
+        border-radius: 50%;
+        position: relative;
+        transition: all 0.5s;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover{
+            background-color: #505051;
+            .personal__camera{
+                opacity: 1;
+                visibility: unset;
+            }
+            a{
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        a{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,-50%);
+        }   
+        .personal__camera{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,-50%);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+    }
+    .personal__name{
+        text-align: center;
+        h1{
+            margin-top: 10px;
+            @include text($c-text,$fs-xl, $fw-black);
+        }
+        .personal__icon{
+            @include text($c-text,$fs-base, $fw-regular);
+
+        }
+        a.btn{
+            @include text($c-text,$fs-base, $fw-semibold);
+            background-color: $c-white;
+            border: 1px solid $c-text;
+            width: 100%;
+            margin-top: 10px;
+            transition: all 0.5s;
+            &:hover{
+                background-color: #74767e;
+                color: $c-white;
+            }
+        }
+    }
+    .personal__badge{
+        background-color: $c-white;
+        border: 1px solid $c-primary;
+        @include text($c-primary, $fs-xs, $fw-regular);
+        position: absolute;
+        top: 20px;
+        right: 20px;
+       
+    }
+    .personal__detail{
+        display: flex;
+        justify-content: space-between;
+        .personal__left{
+            span{
+                @include text($c-text, $fs-xs, $fw-semibold);
+                i{
+                    margin-right: 10px;
+                }
+                display: block
+            }
+        }
+        .personal__right{
+            span{
+                display: block;
+                @include text($c-text, $fs-xs, $fw-black);
+            }
+        }
+    }
+}
+
+
+.personal__info{
+    .personalinfo__learn{
+        .personal__learn{
+            div{
+                img{
+                    width: 25%;
+                }
+            }
+            .personallearn__detail{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                div{
+                    img{
+                        width: 100%;
+                    }
+                }
+                h1{
+                    @include text($c-text, $fs-xl, $fw-bold);
+                    margin-top: 10px;
+                }
+                span{
+                    @include text($c-text, $fs-base, $fw-semibold);
+                }
+                a{
+                    background-color: $c-primary;
+                    @include text($c-white, $fs-base, $fw-bold);
+                    &:hover{
+                        background-color: #19a463;
+                    }
+                }
+            }
+        }
+        .ant-card-body{
+        display: none;
+        }
+    }
+}
+
+
+.personal__info{
+    .personalinfo__desc{
+        .personal__desc{
+            margin-bottom: 20px;
+            padding: 5px 0 50px 0;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .personal__left{
+                span{
+                    @include text($c-text, $fs-md, $fw-bold);
+                }
+                p{
+                    @include text($c-text, $fs-base, $fw-regular);
+                    transition: all 0.5s;
+                    margin-top: 10px;
+                    .subtitle{
+                        @include text(#b2b2b2, $fs-xs, $fw-semibold);
+                    }
+                    &:hover{
+                        a{
+                            opacity: 1;
+                            visibility: unset;
+                        }
+                    }
+                    a{
+                        @include text(#b2b2b2, $fs-xs, $fw-regular);
+                        opacity: 0;
+                        visibility: hidden;
+                        margin-left: 5px;
+                        &:hover{
+                            color: #555;
+                            
+                        }
+                    }
+                }
+                .personal__apps{
+                    margin: 10px 0;
+                    display: block;
+                    @include text($c-primary, $fs-base, $fw-semibold);
+
+                }
+            }
+            .personal__right{
+                a{
+                  @include text($c-primary, $fs-xs, $fw-semibold);
+                  &:hover{
+                      opacity: 0.8;
+                      text-decoration:underline;
+                  }
+                }
+            }
+            .personal__separator{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                border-bottom: 1px solid #f0f0f0;
+                width: 100%;
+                height: 2px;
+            }
+        }
+       
+    }
+}
+
+.personal__info{
+    .personalinfo__share{
+        .personal__share{
+            padding: 10px 0;            
+            h1{
+                @include text($c-text, $fs-md, $fw-bold);
+                margin-bottom: 16px;
+            }
+            span{
+                @include text($c-text, $fs-xs, $fw-semibold);
+            }
+        }
+        .ant-card-body{
+            display: none;
+        }
+    }
+}

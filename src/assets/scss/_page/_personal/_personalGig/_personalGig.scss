@@ -1,0 +1,145 @@
+.personal__gig{
+    .personalgig__work{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        div{
+            img{
+                width: 80%;
+            }
+            h1{
+                @include text($c-text, $fs-md, $fw-bold);
+
+            }
+            span{
+                @include text($c-text, $fs-md, $fw-regular);
+
+            }
+            a{
+                display: block;
+                margin-top: 10px;
+                @include text($c-primary, $fs-md, $fw-bold);
+
+
+            }
+        }
+    }
+    .ant-card-body{
+        display: none;
+    }
+}
+
+
+.personal__gig{
+    .personalgig__create{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            span{
+                display: block;
+                @include text($c-text, $fs-base, $fw-regular);
+            }
+            a{
+                background-color: $c-primary;
+                @include text($c-white, $fs-base, $fw-bold);
+                &:hover{
+                    background-color: #19a463;
+                }
+            }
+        }
+    }
+}
+
+
+.personal__gig{
+    .personalgig__job{
+        display: flex;
+        justify-content: space-between;
+                    .personal__img{
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        width: 20vh;
+                        height: 10vw;
+                    }
+                    .personal_content{
+                        width: 200px;
+                        h1{
+                            @include text($c-text, $fs-2xl, $fw-semibold);
+                        }
+                        p{
+                            @include text($c-text, $fs-base, $fw-regular);
+                        }
+                        div{
+                            margin-left: 35px;
+                        }
+                        i{
+                            
+                        }
+                        span{
+                            @include text($c-text, $fs-base, $fw-regular);
+                        }
+                    }
+                    .personal__btn{
+                        margin-left: 8rem;
+                        display: flex;
+                        align-items: flex-end;
+                        .btn-detail{
+                            background-color: $c-primary;
+                            @include text($c-white, $fs-base, $fw-bold);
+                            &:hover{
+                                background-color: #19a463;
+                            }
+                        }
+                        .btn-edit{
+                            background-color: $c-text;
+                            @include text($c-white, $fs-base, $fw-bold);
+                            border: none;
+                            &:hover{
+                                opacity: 0.8;
+                            }
+                            margin: 0 20px;
+                        }
+                        .btn-delete{
+                            @include text($c-white, $fs-base, $fw-bold);
+                            
+                        }
+                    }
+                }
+}
+
+
+@media  all and (max-width: 600px) {
+  .personal__gig{
+    .personalgig__job{
+        .personal__btn{
+            .btn-edit{
+                margin: inherit;
+            }
+        }
+    }
+  }
+  .personal__gig .personalgig__job .personal_content h1{
+    font-size: 16px;
+  }
+  .personal__gig .personalgig__job .personal__btn{
+    margin-left: inherit;
+    flex-direction: column;
+  }
+  a.btn-detail.btn.btn-success{
+      font-size: 5px;
+        padding: 5px 5px;
+        display: block;
+    }
+  .btn-edit.btn.btn-warning{
+      font-size: 5px;
+        padding: 5px 5px;
+        display: block;
+    }
+  .btn-delete.btn.btn-danger{
+      font-size: 5px;
+        padding: 5px 5px;
+        display: block;
+    }
+}

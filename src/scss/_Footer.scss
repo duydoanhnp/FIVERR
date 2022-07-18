@@ -1,0 +1,97 @@
+.footer-main {
+  padding: 30px 90px;
+  .footer-content {
+    border-top: 2px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+    display: flex;
+    justify-content: space-around;
+    .footer-detail {
+      margin: 0;
+      h6 {
+        color: rgba(0, 0, 0, 0.85);
+        padding: 15px 0;
+      }
+      li {
+        color: #7a7d85;
+        padding-bottom: 15px;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.6;
+        }
+        span {
+          color: #b5b6ba;
+        }
+        .job-name {
+          color: #7a7d85;
+        }
+      }
+    }
+  }
+  .footer-footer {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    .footer-left {
+      margin: 0;
+      font-size: 15px;
+      color: #b5b6ba;
+    }
+    .footer-right {
+      margin: auto;
+      color: #74767e;
+      margin-right: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .soccial {
+      margin-right: 50px;
+      ul {
+        font-size: 20px;
+        display: flex;
+        li {
+          margin-right: 30px;
+        }
+      }
+    }
+    .logo {
+      ul {
+        font-size: 15px;
+        display: flex;
+        li {
+          margin-right: 10px;
+          span {
+            text-align: center;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  //footer
+  .footer-main {
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      ul {
+        padding: 0 20px;
+      }
+    }
+    .footer-footer {
+      flex-direction: column;
+      .footer-right {
+        margin: 0;
+        align-items: center;
+        .soccial {
+          margin: 0;
+        }
+        .logo {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

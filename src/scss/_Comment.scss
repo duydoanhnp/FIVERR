@@ -1,0 +1,50 @@
+.comment {
+  padding: 0px 90px;
+  h3 {
+    border-bottom: 1px solid #ccc;
+  }
+  .input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    outline: none;
+  }
+  .comment-main {
+    padding: 10px 0;
+    .usercomment {
+      padding: 5px 0;
+      .comment-list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .avatar {
+          margin: 0;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+        }
+        .content {
+          margin-left: 10px;
+          padding: 5px 10px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          h6 {
+            margin: 0;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .comment {
+    padding: 0 50px;
+  }
+}
