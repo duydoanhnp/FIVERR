@@ -205,7 +205,9 @@
   position: relative;
   padding: 100px 90px;
   h2 {
+    font-weight: 700;
     color: #404145;
+    padding-bottom: 20px;
   }
   .services-content {
     padding-right: 30px;
@@ -306,8 +308,8 @@
     justify-content: space-between;
     align-items: center;
     .introduce-item-1 {
-      h2,
-      h6 {
+      h2 {
+        font-weight: 700;
         color: #404145;
       }
       .icon {
@@ -319,6 +321,7 @@
         font-size: 18px;
         font-weight: bold;
         display: inline;
+        color: #404145;
       }
       span {
         font-size: 18px;
@@ -338,6 +341,9 @@
 //explore
 .explore {
   padding: 100px 90px;
+  h2 {
+    font-weight: 700;
+  }
   .explore-item {
     padding: 20px 0;
     display: grid;
@@ -363,8 +369,8 @@
     }
     .job-name {
       color: #222325;
-      font-size: 16px;
-      font-weight: 400;
+      font-size: 17px;
+      font-weight: 700;
       text-align: center;
     }
     &:hover {
@@ -386,6 +392,7 @@
     .fiverrbusiness-content {
       margin: 0;
       h2 {
+        font-weight: 700;
         font-size: 30px;
         color: #fff;
       }

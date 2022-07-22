@@ -155,7 +155,6 @@ export const AdminTemplate = (props) => {
                       <NavLink to="/admin/user/adduser">Add Users</NavLink>
                     </Menu.Item>
                   </Menu.SubMenu>
-
                   <Menu.SubMenu key={25} title="Gigs" icon={<GitlabOutlined />}>
                     <Menu.Item key="45" icon={<AuditOutlined />}>
                       <NavLink to="/admin/gig">Gigs</NavLink>

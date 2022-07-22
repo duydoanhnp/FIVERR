@@ -42,7 +42,7 @@ function Login() {
                 style={{ margin: "0 auto", boxShadow: "0 0 8px #95979d" }}
               >
                 <h1 className="login__header mb-2">Sign In to Fiverr</h1>
-                <div className="login__apps">
+                {/* <div className="login__apps">
                   <a
                     href="https://www.facebook.com/"
                     className="btn-facebook btn btn-primary"
@@ -69,7 +69,7 @@ function Login() {
                   <div className="login__separator">
                     <span>OR</span>
                   </div>
-                </div>
+                </div> */}
                 <Form
                   preserve={false}
                   name="normal_login"

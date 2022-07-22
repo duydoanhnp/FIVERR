@@ -19,14 +19,11 @@ export default function PersonalGig() {
                   </a>
                 </div>
                </div>
-
-
             }
             style={{
                 width: "100%"
             }}
             >
-            
         </Card>
       <Card className='mt-3'
             title={
@@ -42,32 +39,23 @@ export default function PersonalGig() {
                     </div>
                    
                 </div>
-
-
             }
             style={{
                 width: "100%"
             }}
             >
-            
         </Card>
       <Card className='mt-3'
             title={
                 <div className='personalgig__job'>
                     <div className="container">
                       <div className="row">
-
-
-
-
                         <div className="col-3">
                           <div className="content">
                             <div className="personal__img">
                             </div>
                           </div>
                         </div>
-
-
                         <div className="col-9">
                           <div className="content">
                               <h1>Lập trình front end với Reactjs</h1>
@@ -76,7 +64,6 @@ export default function PersonalGig() {
                             </div>
                         </div>
                       </div>
-
                       <div className="row">
                         <div className="col-6">
                             <div className="content">
@@ -104,20 +91,15 @@ export default function PersonalGig() {
                             </div>
                           </div>
                         </div>
-                      </div>
-                            
+                      </div>  
                     </div>
                 </div>
-                
-
             }
             style={{
                 width: "100%"
             }}
-            >
-            
+            > 
         </Card>
-
     </section>
   )
 }

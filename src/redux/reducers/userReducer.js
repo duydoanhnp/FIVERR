@@ -12,8 +12,6 @@ const initialState = {
     userRegister : {},
     userInfo: {},
     arrUser: [],
-
-
 }
 
 const userReducer = createSlice({
@@ -168,4 +166,5 @@ export const editNguoiDung = (id,values) =>{
         }
     }
 }
+
 

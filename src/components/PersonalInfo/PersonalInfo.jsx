@@ -36,8 +36,6 @@ function PersonalInfo(props) {
                         </a>
                     </div>
                 </div>
-
-
             }
             extra={<span className='personal__badge badge badge-pill badge-success'>· Online</span>}
             style={{
@@ -254,9 +252,6 @@ function PersonalInfo(props) {
             >
             
         </Card>
-       
-        
-    
     </section>
   )
 }

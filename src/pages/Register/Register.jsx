@@ -88,7 +88,7 @@ function Register() {
       style={{ padding: "50px 0", backgroundColor: "#f7f7f7" }}
     >
       <Row justify="center">
-        <Col xs={24} sm={12} lg={7} md={12}>
+        <Col xs={24} sm={12} lg={8} md={12}>
           <div className="content">
             <div className="site-card-border-less-wrapper">
               <Card
@@ -96,7 +96,7 @@ function Register() {
                 style={{ margin: "0 auto", boxShadow: "0 0 8px #95979d" }}
               >
                 <h1 className="register__header">Join Fiverr</h1>
-                <div className="register__apps">
+                {/* <div className="register__apps">
                   <a
                     href="https://www.facebook.com/"
                     className="btn-facebook btn btn-primary"
@@ -123,7 +123,7 @@ function Register() {
                   <div className="register__separator">
                     <span>OR</span>
                   </div>
-                </div>
+                </div> */}
                 <div className="register__form">
                   <Form
                     preserve={false}
@@ -174,7 +174,6 @@ function Register() {
                         placeholder="Password"
                       />
                     </Form.Item>
-
                     <Form.Item
                       name="confirm"
                       label="Confirm Password"
@@ -190,7 +189,6 @@ function Register() {
                             if (!value || getFieldValue("password") === value) {
                               return Promise.resolve();
                             }
-
                             return Promise.reject(
                               new Error(
                                 "The two passwords that you entered do not match!"
@@ -206,7 +204,6 @@ function Register() {
                         placeholder="Password"
                       />
                     </Form.Item>
-
                     <Form.Item
                       name="nickname"
                       label="Nickname"
@@ -270,9 +267,11 @@ function Register() {
                       </Checkbox>
                     </Form.Item>
                     <Form.Item {...tailFormItemLayout}>
-                      <Button className="register__btn" htmlType="submit">
-                        Register
-                      </Button>
+                      <NavLink to="/login">
+                        <Button className="register__btn" htmlType="submit">
+                          Register
+                        </Button>
+                      </NavLink>
                       <div className="register__separator2"></div>
                       <div>
                         <span className="register__text">Already member?</span>
