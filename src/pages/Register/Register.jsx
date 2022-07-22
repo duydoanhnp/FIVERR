@@ -137,6 +137,24 @@ function Register() {
                     }}
                   >
                     <Form.Item
+                      name="name"
+                      label="Name"
+                      tooltip="What do you want others to call you?"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please input your nickname!",
+                          whitespace: true,
+                        },
+                      ]}
+                    >
+                      <Input
+                        id="name"
+                        onChange={handleChange}
+                        placeholder="Your Name"
+                      />
+                    </Form.Item>
+                    <Form.Item
                       name="email"
                       label="E-mail"
                       rules={[
@@ -156,7 +174,6 @@ function Register() {
                         placeholder="Email"
                       />
                     </Form.Item>
-
                     <Form.Item
                       name="password"
                       label="Password"
@@ -205,25 +222,6 @@ function Register() {
                       />
                     </Form.Item>
                     <Form.Item
-                      name="nickname"
-                      label="Nickname"
-                      tooltip="What do you want others to call you?"
-                      rules={[
-                        {
-                          required: true,
-                          message: "Please input your nickname!",
-                          whitespace: true,
-                        },
-                      ]}
-                    >
-                      <Input
-                        id="first_name"
-                        onChange={handleChange}
-                        placeholder="First Name"
-                      />
-                    </Form.Item>
-
-                    <Form.Item
                       name="phone"
                       label="Phone Number"
                       rules={[
@@ -267,11 +265,9 @@ function Register() {
                       </Checkbox>
                     </Form.Item>
                     <Form.Item {...tailFormItemLayout}>
-                      <NavLink to="/login">
                         <Button className="register__btn" htmlType="submit">
                           Register
                         </Button>
-                      </NavLink>
                       <div className="register__separator2"></div>
                       <div>
                         <span className="register__text">Already member?</span>
