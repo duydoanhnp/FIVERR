@@ -27,7 +27,6 @@ function Login() {
     alert("Bạn đã đăng nhập rồi! ");
     return <Redirect to="/home" />;
   }
-
   return (
     <section
       className="login"
