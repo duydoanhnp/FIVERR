@@ -75,9 +75,11 @@
 @media screen and (max-width: 900px) {
   //footer
   .footer-main {
+    padding: 50px;
     .footer-content {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
       ul {
         padding: 0 20px;
       }
@@ -95,5 +97,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-main {
+    padding: 50px 20px;
   }
 }
