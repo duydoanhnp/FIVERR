@@ -2,7 +2,10 @@ import React, { memo, useState, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { USER_LOGIN } from "../../util/setting";
 import { NavLink, Redirect } from "react-router-dom";
-import { userRegisterAPI } from "../../redux/reducers/userReducer";
+import {
+  userRegisterAPI,
+  userLoginAPI,
+} from "../../redux/reducers/userReducer";
 import { Button, Checkbox, Form, Input, Select, Card, Row, Col } from "antd";
 
 const { Option } = Select;
@@ -72,8 +75,8 @@ function Register() {
     userRegisterRef.current[id] = value;
   };
   const handleSubmit = (e) => {
-    const action = userRegisterAPI(userRegisterRef.current);
-    dispatch(action);
+    dispatch(userRegisterAPI(userRegisterRef.current));
+    dispatch(userLoginAPI(userRegisterRef.current));
   };
   const handleCancel = () => {
     setIsModalVisible(false);
@@ -265,9 +268,9 @@ function Register() {
                       </Checkbox>
                     </Form.Item>
                     <Form.Item {...tailFormItemLayout}>
-                        <Button className="register__btn" htmlType="submit">
-                          Register
-                        </Button>
+                      <Button className="register__btn" htmlType="submit">
+                        Register
+                      </Button>
                       <div className="register__separator2"></div>
                       <div>
                         <span className="register__text">Already member?</span>
