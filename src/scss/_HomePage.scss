@@ -203,15 +203,12 @@
 //services
 .services {
   position: relative;
-  padding: 100px 0;
+  padding: 100px 75px;
   h2 {
     font-weight: 700;
     color: #404145;
     padding-bottom: 20px;
-    padding: 0 90px;
-  }
-  .slider {
-    padding: 0 75px;
+    padding-left: 15px;
   }
   .services-content {
     padding: 0 15px;
@@ -334,7 +331,7 @@
     }
     .introduce-item-2 {
       video {
-        margin-left: 120px;
+        margin-left: 100px;
         width: 90%;
         border-radius: 5px;
       }
@@ -494,7 +491,7 @@
   .next {
     position: absolute;
     top: 45%;
-    right: 80px;
+    right: 65px;
   }
 }
 
