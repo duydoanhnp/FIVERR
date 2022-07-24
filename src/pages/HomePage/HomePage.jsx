@@ -77,143 +77,143 @@ export default function HomePage(props) {
   };
 
   const menu = (
-   <Menu
-      items={ 
-        userLogin.role === "ADMIN" ? 
-        ([
-        {
-          key: "1",
-          label: (
-            <NavLink
-              style={{
-                display: "block",
-                padding: "10px 0",
-                color: "#62646a",
-                fontSize: "18px",
-                fontWeight: "700",
-              }}
-              to={`/personal/${userLogin._id}`}
-            >
-              Personal Page
-            </NavLink>
-          ),
-        },
-        {
-          key: "2",
-          label: (
-            <NavLink
-              style={{
-                display: "block",
-                padding: "10px 0",
-                color: "#62646a",
-                fontSize: "18px",
-                fontWeight: "700",
-              }}
-              to={`/admin/user`}
-            >
-              Admin Page
-            </NavLink>
-          ),
-        },
-        {
-          key: "3",
-          label: (
-            <NavLink
-              style={{
-                display: "block",
-                padding: "10px 0",
-                color: "#62646a",
-                fontSize: "18px",
-                fontWeight: "700",
-              }}
-              to={`/admin/user/infouser/${userLogin._id}`}
-            >
-              Personal Detail
-            </NavLink>
-          ),
-        },
-        {
-          key: "4",
-          label: (
-            <button
-              style={{
-                display: "block",
-                padding: "10px 0",
-                color: "#62646a",
-                fontSize: "18px",
-                fontWeight: "700",
-                outline: "none",
-                border: " 1px solid transparent",
-                backgroundColor: " transparent",
-              }}
-              onClick={logout}
-              type="button"
-              className="logout"
-            >
-              Log Out
-            </button>
-          ),
-        },
-      ]) : 
-      ([
-        {
-          key: "1",
-          label: (
-            <NavLink
-              style={{
-                display: "block",
-                padding: "10px 0",
-                color: "#62646a",
-                fontSize: "18px",
-                fontWeight: "700",
-              }}
-              to={`/personal/${userLogin._id}`}
-            >
-              Personal Page
-            </NavLink>
-          ),
-        },
-        {
-          key: "2",
-          label: (
-            <NavLink
-              style={{
-                display: "block",
-                padding: "10px 0",
-                color: "#62646a",
-                fontSize: "18px",
-                fontWeight: "700",
-              }}
-              to={`/admin/user/infouser/${userLogin._id}`}
-            >
-              Personal Detail
-            </NavLink>
-          ),
-        },
-        {
-          key: "3",
-          label: (
-            <button
-              style={{
-                display: "block",
-                padding: "10px 0",
-                color: "#62646a",
-                fontSize: "18px",
-                fontWeight: "700",
-                outline: "none",
-                border: " 1px solid transparent",
-                backgroundColor: " transparent",
-              }}
-              onClick={logout}
-              type="button"
-              className="logout"
-            >
-              Log Out
-            </button>
-          ),
-        },
-      ])
-    }
+    <Menu
+      items={
+        userLogin.role === "ADMIN"
+          ? [
+              {
+                key: "1",
+                label: (
+                  <NavLink
+                    style={{
+                      display: "block",
+                      padding: "10px 0",
+                      color: "#62646a",
+                      fontSize: "18px",
+                      fontWeight: "700",
+                    }}
+                    to={`/personal/${userLogin._id}`}
+                  >
+                    Personal Page
+                  </NavLink>
+                ),
+              },
+              {
+                key: "2",
+                label: (
+                  <NavLink
+                    style={{
+                      display: "block",
+                      padding: "10px 0",
+                      color: "#62646a",
+                      fontSize: "18px",
+                      fontWeight: "700",
+                    }}
+                    to={`/admin/user`}
+                  >
+                    Admin Page
+                  </NavLink>
+                ),
+              },
+              {
+                key: "3",
+                label: (
+                  <NavLink
+                    style={{
+                      display: "block",
+                      padding: "10px 0",
+                      color: "#62646a",
+                      fontSize: "18px",
+                      fontWeight: "700",
+                    }}
+                    to={`/admin/user/infouser/${userLogin._id}`}
+                  >
+                    Personal Detail
+                  </NavLink>
+                ),
+              },
+              {
+                key: "4",
+                label: (
+                  <button
+                    style={{
+                      display: "block",
+                      padding: "10px 0",
+                      color: "#62646a",
+                      fontSize: "18px",
+                      fontWeight: "700",
+                      outline: "none",
+                      border: " 1px solid transparent",
+                      backgroundColor: " transparent",
+                    }}
+                    onClick={logout}
+                    type="button"
+                    className="logout"
+                  >
+                    Log Out
+                  </button>
+                ),
+              },
+            ]
+          : [
+              {
+                key: "1",
+                label: (
+                  <NavLink
+                    style={{
+                      display: "block",
+                      padding: "10px 0",
+                      color: "#62646a",
+                      fontSize: "18px",
+                      fontWeight: "700",
+                    }}
+                    to={`/personal/${userLogin._id}`}
+                  >
+                    Personal Page
+                  </NavLink>
+                ),
+              },
+              {
+                key: "2",
+                label: (
+                  <NavLink
+                    style={{
+                      display: "block",
+                      padding: "10px 0",
+                      color: "#62646a",
+                      fontSize: "18px",
+                      fontWeight: "700",
+                    }}
+                    to={`/admin/user/infouser/${userLogin._id}`}
+                  >
+                    Personal Detail
+                  </NavLink>
+                ),
+              },
+              {
+                key: "3",
+                label: (
+                  <button
+                    style={{
+                      display: "block",
+                      padding: "10px 0",
+                      color: "#62646a",
+                      fontSize: "18px",
+                      fontWeight: "700",
+                      outline: "none",
+                      border: " 1px solid transparent",
+                      backgroundColor: " transparent",
+                    }}
+                    onClick={logout}
+                    type="button"
+                    className="logout"
+                  >
+                    Log Out
+                  </button>
+                ),
+              },
+            ]
+      }
     />
   );
 
@@ -441,10 +441,18 @@ export default function HomePage(props) {
             </div>
             <div className="popular">
               <p>Popular:</p>
-              <span className="webslte-design">Webslte Design</span>
-              <span className="world-press">WorldPress</span>
-              <span className="logo-design">Logo Design</span>
-              <span className="nft">NFT Art</span>
+              <Link className="text" to="/joblist?name=design">
+                <span className="webslte-design">Webslte Design</span>
+              </Link>
+              <Link className="text" to="/joblist?name=WordPress">
+                <span className="world-press">WordPress</span>
+              </Link>
+              <Link className="text" to="/joblist?name=logo%20design">
+                <span className="logo-design">Logo Design</span>
+              </Link>
+              <Link className="text" to="/joblist?name=nft%20art">
+                <span className="nft">NFT Art</span>
+              </Link>
             </div>
             <div className="search-btn-responsive">
               <input
