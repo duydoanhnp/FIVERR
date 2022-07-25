@@ -802,7 +802,7 @@
   //header
   .header-main-responsive-1 {
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 30px;
     justify-content: space-between;
     align-items: center;
     .btn {
@@ -842,7 +842,7 @@
     display: contents;
   }
   .services {
-    padding: 50px 0;
+    padding: 50px 30px;
     h2 {
       padding: 0 20px;
     }
@@ -852,18 +852,18 @@
     .previous {
       position: absolute;
       top: 51%;
-      left: 0px;
+      left: 25px;
     }
     .next {
       position: absolute;
       top: 51%;
-      right: 0px;
+      right: 25px;
     }
   }
 
   //explore
   .explore {
-    padding: 50px 20px;
+    padding: 50px 30px;
     .explore-item {
       padding: 20px 0;
       padding-left: 68px;
@@ -874,15 +874,15 @@
   }
 
   .introduce {
-    padding: 50px 20px;
+    padding: 50px 30px;
   }
 
   .fiverrbusiness {
-    padding: 50px 20px;
+    padding: 50px 30px;
   }
 
   .reviews {
-    padding: 50px 20px;
+    padding: 50px 30px;
     .previous {
       position: absolute;
       top: 45%;
@@ -897,7 +897,7 @@
 
   //fiverr join
   .fiverrjoin {
-    padding: 50px 20px;
+    padding: 50px 30px;
     .fiverrjoin-main {
       .fiverrjoin-content {
         top: 20px;
