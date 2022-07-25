@@ -693,21 +693,16 @@
   }
 
   .services {
-    h2 {
-      padding: 0 50px;
-    }
-    .slider {
-      padding: 0 35px;
-    }
+    padding: 50px ;
     .previous {
       position: absolute;
       top: 51%;
-      left: 25px;
+      left: 40px;
     }
     .next {
       position: absolute;
       top: 51%;
-      right: 25px;
+      right: 40px;
     }
   }
 
