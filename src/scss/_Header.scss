@@ -307,11 +307,11 @@
           display: flex;
           padding: 15px 0;
           justify-content: space-between;
-          align-items: center;
+          // align-items: center;
           .btn {
             padding: 0;
             button {
-              padding: 0;
+              padding: 0 0 20px 0;
               background-color: transparent;
               border: none;
               font-size: 18px;
@@ -321,7 +321,7 @@
             width: 100px;
           }
           .join {
-            font-size: 18px;
+            font-size: 20px;
             color: #62646a;
           }
           .btn__login {

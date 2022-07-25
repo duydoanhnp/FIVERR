@@ -802,11 +802,11 @@
     display: flex;
     padding: 10px 30px;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     .btn {
       padding: 0;
       button {
-        padding: 0;
+        padding: 0 0 20px 0;
         font-size: 18px;
         color: #7a7d85;
         font-weight: 600;
@@ -819,11 +819,13 @@
       width: 85px;
     }
     span {
+      vertical-align: bottom;
       color: #62646a;
       font-size: 20px;
     }
     .join {
-      font-size: 18px;
+      font-size: 20px;
+      text-align: center;
     }
     .btn__login {
       color: rgba(0, 0, 0, 0.7);
@@ -837,7 +839,7 @@
   }
 
   .search {
-    padding-left: 75px;
+    padding: 0 80px;
   }
 
   //services
