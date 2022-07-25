@@ -198,6 +198,8 @@
             margin-right: 10px;
           }
           button {
+            font-size: 18px;
+            padding: 0;
             margin-right: 10px;
             background-color: transparent;
             border: none;
@@ -219,7 +221,7 @@
         .right {
           margin: 0;
           span {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 600;
             margin-right: 20px;
           }
@@ -227,9 +229,10 @@
             color: #7a7d85;
           }
           .join {
+            margin: 0;
             background-color: transparent;
             color: #7a7d85;
-            padding: 3px 17px;
+            padding: 3px 15px;
             border: 1px solid #7a7d85;
             border-radius: 5px;
             transition: all 0.3s;
@@ -298,7 +301,7 @@
         display: none;
       }
       .header-main-jobspage-responsive-1 {
-        padding: 0 30px;
+        padding: 0 50px;
         display: block;
         .content {
           display: flex;
@@ -308,15 +311,17 @@
           .btn {
             padding: 0;
             button {
+              padding: 0;
               background-color: transparent;
               border: none;
+              font-size: 18px;
             }
           }
           img {
             width: 100px;
           }
           .join {
-            font-size: 16px;
+            font-size: 18px;
             color: #62646a;
           }
           .btn__login {

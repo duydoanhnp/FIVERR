@@ -76,7 +76,6 @@ function Register() {
   };
   const handleSubmit = (e) => {
     dispatch(userRegisterAPI(userRegisterRef.current));
-    dispatch(userLoginAPI(userRegisterRef.current));
   };
   const handleCancel = () => {
     setIsModalVisible(false);

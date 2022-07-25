@@ -67,6 +67,7 @@
   .typejobspage {
     .main-content {
       .content-items {
+        padding: 0 50px;
         .content-left {
           display: none;
         }
@@ -79,6 +80,15 @@
         }
       }
     }
+    .main-job {
+      .main-job-content {
+        .content-typeJob {
+          .job-name {
+            font-size: 16px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -86,9 +96,19 @@
   .typejobspage {
     .main-content {
       .content-items {
+        padding: 0 50px;
         .content-right {
           max-width: none;
           grid-template-columns: repeat(1, 1fr);
+          .content-main {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+            p {
+              font-size: 18px;
+            }
+          }
         }
       }
     }

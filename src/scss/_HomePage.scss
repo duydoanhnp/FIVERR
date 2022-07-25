@@ -558,17 +558,18 @@
   //header
   .header-main-responsive-2 {
     display: flex;
-    padding: 15px 0;
+    padding: 15px 50px;
     justify-content: space-between;
     align-items: center;
     .left {
-      padding: 0 50px;
+      padding: 0;
       margin: 0;
       button {
+        padding: 0;
         font-size: 18px;
         color: #7a7d85;
         font-weight: 600;
-        margin-right: 10px;
+        margin-right: 20px;
         background-color: transparent;
         border: none;
       }
@@ -578,14 +579,16 @@
       }
     }
     .right {
-      margin-right: 20px;
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
       span {
         color: #7a7d85;
-        font-size: 16px;
         font-weight: 600;
         margin-right: 20px;
       }
       .join {
+        margin: 0;
         background-color: transparent;
         color: #7a7d85;
         padding: 3px 17px;
@@ -693,7 +696,7 @@
   }
 
   .services {
-    padding: 50px ;
+    padding: 50px;
     .previous {
       position: absolute;
       top: 51%;
@@ -803,6 +806,7 @@
     .btn {
       padding: 0;
       button {
+        padding: 0;
         font-size: 18px;
         color: #7a7d85;
         font-weight: 600;
@@ -819,7 +823,7 @@
       font-size: 20px;
     }
     .join {
-      font-size: 16px;
+      font-size: 18px;
     }
     .btn__login {
       color: rgba(0, 0, 0, 0.7);
@@ -830,6 +834,10 @@
         color: rgba(0, 0, 0, 0.7);
       }
     }
+  }
+
+  .search {
+    padding-left: 75px;
   }
 
   //services
