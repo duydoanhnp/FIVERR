@@ -2,10 +2,7 @@ import React, { memo, useState, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { USER_LOGIN } from "../../util/setting";
 import { NavLink, Redirect } from "react-router-dom";
-import {
-  userRegisterAPI,
-  userLoginAPI,
-} from "../../redux/reducers/userReducer";
+import { userRegisterAPI } from "../../redux/reducers/userReducer";
 import { Button, Checkbox, Form, Input, Select, Card, Row, Col } from "antd";
 
 const { Option } = Select;
@@ -184,6 +181,16 @@ function Register() {
                           required: true,
                           message: "Please input your password!",
                         },
+                        ({ getFieldValue }) => ({
+                          validator(_, value) {
+                            if (!value || value.length >= 6) {
+                              return Promise.resolve();
+                            }
+                            return Promise.reject(
+                              new Error("Password is not enough strong!")
+                            );
+                          },
+                        }),
                       ]}
                       hasFeedback
                     >
@@ -231,6 +238,17 @@ function Register() {
                           required: true,
                           message: "Please input your phone number!",
                         },
+                        ({ getFieldValue }) => ({
+                          validator(_, value) {
+                            const regex = /^-?\d+$/;
+                            if (!value || regex.test(value)) {
+                              return Promise.resolve();
+                            }
+                            return Promise.reject(
+                              new Error("The input is not valid Phone Number!")
+                            );
+                          },
+                        }),
                       ]}
                     >
                       <Input
