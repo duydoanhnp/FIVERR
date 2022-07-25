@@ -24,6 +24,7 @@ export const getSubJobs = (id) => {
   return async (dispatch) => {
     try {
       let result = await http.get(`/api/sub-type-jobs/${id}`);
+      if (!result.data) throw "Error";
       console.log("getSubJobs", result);
       const action = setSubJobs(result.data);
       dispatch(action);

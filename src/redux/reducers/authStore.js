@@ -14,7 +14,6 @@ const authStore = createSlice({
 
 export default authStore.reducer;
 
-//---action thunk setApiDetailJob---
 
 
   

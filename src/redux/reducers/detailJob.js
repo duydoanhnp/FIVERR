@@ -24,6 +24,7 @@ export const getDetailJob = (iddetail) => {
   return async (dispatch) => {
     try {
       const result = await http.get(`/api/jobs/${iddetail}`);
+      if (!result.data) throw "Error";
       console.log("getDetailJob", result);
       dispatch(setApiDetailJob(result.data));
     } catch (err) {

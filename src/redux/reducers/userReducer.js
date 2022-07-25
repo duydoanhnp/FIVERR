@@ -44,6 +44,7 @@ export const userLoginAPI = (userLogin) => {
     try {
       let result = await http.post("api/auth/signin", userLogin);
       console.log(result.data);
+      if (!result.data) throw "Error"
       let usLogin = result.data.user;
       localStorage.setItem(USER_LOGIN, JSON.stringify(usLogin));
       localStorage.setItem(TOKEN, result.data.token);
@@ -70,7 +71,6 @@ export const userRegisterAPI = (userRegister) => {
       dispatch(userLoginAPI(userRegister));
       alert("Đăng ký thành công");
     } catch (error) {
-      alert("Đăng ký không thành công");
       console.log(error.response?.data);
     }
   };
@@ -80,6 +80,7 @@ export const userInfoAPI = (userID) => {
   return async (dispatch) => {
     try {
       let result = await http.get(`/api/users/${userID}`);
+      if (!result.data) throw "Error"
       const action = infoAPI(result.data);
       dispatch(action);
     } catch (error) {
@@ -93,6 +94,7 @@ export const getArrUserAPI = (name = "") => {
     try {
       if (name.toLowerCase().trim() !== "") {
         let result = await http.get(`/api/users/${name}`);
+        if (!result.data) throw "Error"
         dispatch(getArrUser(result.data));
       } else {
         let result = await http.get(`/api/users`);
@@ -108,6 +110,7 @@ export const themNguoiDung = (form) => {
   return async (dispatch) => {
     try {
       let result = await http.post(`/api/users`, form);
+      if (!result.data) throw "Error"
       alert("Thêm người dùng thành công!");
       history.push("/admin/user");
     } catch (error) {
@@ -122,6 +125,7 @@ export const timKiemUser = (name) => {
       let result = await http.get(
         `/api/users/pagination-search?name=${name}&skip=0&limit=2`
       );
+      if (!result.data) throw "Error"
       dispatch(getArrUser(result.data));
     } catch (error) {
       console.log(error.response?.data);
@@ -134,6 +138,7 @@ export const xoaNguoiDung = (id) => {
     try {
       if (window.confirm("Bạn có muốn xóa không!")) {
         let result = await http.delete(`/api/users/${id}`);
+        if (!result.data) throw "Error"
         dispatch(getArrUserAPI());
       }
     } catch (error) {
@@ -146,6 +151,7 @@ export const editNguoiDung = (id, values) => {
   return async (dispatch) => {
     try {
       let result = await http.put(`/api/users/${id}`, values);
+      if (!result.data) throw "Error"
       alert("Cập nhật người dùng thành công!");
       history.push("/admin/user");
     } catch (error) {

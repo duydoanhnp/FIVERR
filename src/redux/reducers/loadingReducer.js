@@ -13,7 +13,6 @@ const loadingReducer = createSlice({
       },
       hideLoading: (state,action) =>{
           state.isLoading = false
-
       }
   }
 });

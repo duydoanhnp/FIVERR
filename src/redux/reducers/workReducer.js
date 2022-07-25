@@ -33,6 +33,7 @@ export const getWork = () =>{
     return async dispatch =>{
         try{
             let result = await http.get(`/api/jobs/by-user`)
+            if (!result.data) throw "Error";
         }
         catch(err){
             console.log(err.response?.data);
@@ -46,9 +47,11 @@ export const getArrWork = (tenCongViec = "") =>{
         try{
             if(tenCongViec.toLowerCase().trim() !== ""){
                 let result = await http.get(`/api/jobs/by-name?name=${tenCongViec}`)
+                if (!result.data) throw "Error";
                 dispatch(getListWork(result.data))
             }else{
                 let result = await http.get(`/api/jobs/by-name?name=`)
+                if (!result.data) throw "Error"
                 dispatch(getListWork(result.data))
             }
         }
@@ -63,6 +66,7 @@ export const addNewWork = (thongTinCongViec) =>{
     return async dispatch =>{
         try{         
             let result = await http.post(`/api/jobs`,thongTinCongViec)
+            if (!result.data) throw "Error";
             alert("Thêm công việc thành công!")
             history.push("/admin/gig")
         }
@@ -77,6 +81,7 @@ export const xoaCongViec = (id) =>{
         try{         
             if(window.confirm("Bạn muốn xóa không!")){
                 let result = await http.delete(`/api/jobs/${id}`)
+                if (!result.data) throw "Error";
                 dispatch(getArrWork())
             }
     
@@ -91,8 +96,8 @@ export const getWorkDetail = (id) =>{
     return async dispatch =>{
         try{         
             let result = await http.get(`/api/jobs/${id}`)
+            if (!result.data) throw "Error";
             dispatch(getWorkDetailAPI(result.data))
-    
         }
         catch(err){
             console.log(err.response?.data);
@@ -106,8 +111,8 @@ export const getWorkPersonal = () =>{
     return async dispatch =>{
         try{         
             let result = await http.get(`/api/jobs/`)
+            if (!result.data) throw "Error";
             dispatch(getWorkPersonalAPI(result.data))
-    
         }
         catch(err){
             console.log(err.response?.data);
@@ -120,6 +125,7 @@ export const editCongViec = (id, values) =>{
     return async dispatch =>{
         try{         
             let result = await http.put(`/api/jobs/${id}`, values)
+            if (!result.data) throw "Error";
             alert("Update công việc thành công!")
             history.push("/admin/gig")
         }
@@ -134,6 +140,7 @@ export const editWorkImage = (id ,values) =>{
    return async dispatch =>{
         try{
             let result = await http.post(`/api/jobs/upload-image/${id}` , values)
+            if (!result.data) throw "Error";
             console.log("abvc");
             console.log(result.data);
         }

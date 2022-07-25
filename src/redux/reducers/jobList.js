@@ -24,6 +24,7 @@ export const getJobListbySearch = (nameSearch) => {
   return async (dispatch) => {
     try {
       const result = await http.get(`/api/jobs/by-name?name=${nameSearch}`);
+      if (!result.data) throw "Error";
       console.log("getJobListbySearch", result);
       dispatch(setApiJobList(result.data));
     } catch (err) {

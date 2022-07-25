@@ -25,6 +25,7 @@ export const getApiMainJob = () => {
     return async dispatch => {
         try{
             let result = await http.get('/api/type-jobs');
+            if (!result.data) throw "Error";
             console.log('getApiMainJob', result);
             const action = getApiTypeJob(result.data);
             dispatch(action);
